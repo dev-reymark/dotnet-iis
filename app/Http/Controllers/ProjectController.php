@@ -35,4 +35,12 @@ class ProjectController extends Controller
             'projects' => $projects
         ]);
     }
+
+    public function getAllProjects()
+    {
+        $projects = Project::all();
+        return inertia('Project/ProjectList', [
+            'projects' => $projects
+        ]);
+    }
 }

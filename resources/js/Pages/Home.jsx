@@ -9,9 +9,9 @@ export default function Home({ auth }) {
 
             <NavBar auth={auth} />
             <main>
-                <div className="bg-neutral-900">
+                <div className="bg-gradient-to-b from-black to-neutral-900">
                     <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
-                        <h1 className="font-semibold text-white text-5xl md:text-6xl">
+                        <h1 className="font-semibold text-white text-5xl md:text-7xl">
                             <span className="text-primary-400">
                                 Datalogic Systems Corporation:
                             </span>{" "}
@@ -123,8 +123,7 @@ export default function Home({ auth }) {
                         <div className="max-w-5xl px-4 xl:px-0 mx-auto">
                             <div className="mb-4">
                                 <h2 className="text-neutral-400">
-                                    Trusted by Open Source, enterprise, and more
-                                    than 99,000 of you
+                                    Trusted by +50 companies around the world
                                 </h2>
                             </div>
 
@@ -440,7 +439,7 @@ export default function Home({ auth }) {
                     <div className="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
                         <div className="max-w-3xl mb-10 lg:mb-14">
                             <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
-                                Preline reviews
+                                Our client reviews
                             </h2>
                             <p className="mt-1 text-neutral-400">
                                 With over 30 awards, and achievements, we
@@ -453,9 +452,13 @@ export default function Home({ auth }) {
                             <div>
                                 <blockquote>
                                     <p className="font-medium text-xl text-white md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
-                                        To say that switching to Preline has
-                                        been life-changing is an understatement.
-                                        My business has tripled since then.
+                                        To say that{" "}
+                                        <span className="text-primary-400">
+                                            Datalogic Systems Corporation
+                                        </span>{" "}
+                                        has been life-changing is an
+                                        understatement. My business has tripled
+                                        since then.
                                     </p>
 
                                     <footer className="mt-6">
@@ -772,9 +775,11 @@ export default function Home({ auth }) {
                                         </h4>
 
                                         <address className="mt-1 text-neutral-400 text-sm not-italic">
-                                            300 Bath Street, Tay House
+                                            Unit 5B 5th Floor, Asian Star Building
                                             <br />
-                                            Glasgow G2 4JR, United Kingdom
+                                           2402 Asean Drive Corner, Singapura Lane
+                                           <br />
+                                           Filinvest Corporate City Alabang, Muntinlupa City, 1781
                                         </address>
                                     </div>
                                 </div>
@@ -805,7 +810,7 @@ export default function Home({ auth }) {
                                             href="#mailto:example@site.co"
                                             target="_blank"
                                         >
-                                            hello@example.so
+                                            solutions@datalogicorp.com
                                         </a>
                                     </div>
                                 </div>
