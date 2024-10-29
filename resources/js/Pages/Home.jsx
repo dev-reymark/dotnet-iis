@@ -6,19 +6,18 @@ export default function Home({ auth }) {
     return (
         <>
             <Head title="Home" />
-
             <NavBar auth={auth} />
             <main>
-                <div className="bg-gradient-to-b from-black to-neutral-900">
-                    <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
-                        <h1 className="font-semibold text-white text-5xl md:text-7xl">
-                            <span className="text-primary-400">
+                <div className="">
+                    <div className="max-w-5xl mx-auto px-4 xl:px-6 pt-24 lg:pt-32 pb-24">
+                        <h1 className="font-semibold text-5xl md:text-7xl">
+                            <span className="text-primary font-extrabold">
                                 Datalogic Systems Corporation:
                             </span>{" "}
                             Transforming ideas into reality
                         </h1>
                         <div className="max-w-4xl">
-                            <p className="mt-5 text-neutral-400 text-lg">
+                            <p className="mt-5 text-neutral-600 text-lg">
                                 We are a leading provider of custom software
                                 development and consulting services. We are
                                 dedicated to delivering high-quality software
@@ -28,7 +27,7 @@ export default function Home({ auth }) {
                     </div>
                 </div>
 
-                <div className="relative overflow-hidden pt-4 bg-neutral-900">
+                <div className="relative overflow-hidden pt-4">
                     <svg
                         className="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2"
                         width="2745"
@@ -120,9 +119,9 @@ export default function Home({ auth }) {
                     </svg>
 
                     <div className="relative z-10">
-                        <div className="max-w-5xl px-4 xl:px-0 mx-auto">
+                        <div className="max-w-5xl px-4 xl:px-6 mx-auto">
                             <div className="mb-4">
-                                <h2 className="text-neutral-400">
+                                <h2 className="text-neutral-600">
                                     Trusted by +50 companies around the world
                                 </h2>
                             </div>
@@ -136,7 +135,7 @@ export default function Home({ auth }) {
                                 >
                                     <path
                                         d="m431.7 0h-235.5v317.8h317.8v-235.5c0-45.6-36.7-82.3-82.3-82.3zm-308.9 0h-40.5c-45.6 0-82.3 36.7-82.3 82.3v40.5h122.8zm-122.8 196.2h122.8v122.8h-122.8zm392.5 317.8h40.5c45.6 0 82.3-36.7 82.3-82.3v-39.2h-122.8zm-196.3-121.5h122.8v122.8h-122.8zm-196.2 0v40.5c0 45.6 36.7 82.3 82.3 82.3h40.5v-122.8zm828-359.6h-48.1v449.4h254.5v-43h-206.4zm360.8 119c-93.7 0-159.5 69.6-159.5 169.6v11.5c1.3 43 20.3 83.6 51.9 113.9 30.4 27.9 69.6 44.3 111.4 44.3h6.3c44.3 0 86.1-16.5 119-44.3l1.3-1.3-21.5-35.4-2.5 1.3c-26.6 24.1-59.5 38-94.9 38-58.2 0-117.7-38-121.5-122.8h243.1v-2.5s1.3-15.2 1.3-22.8c-.3-91.2-53.4-149.5-134.4-149.5zm-108.9 134.2c10.1-57 51.9-93.7 106.3-93.7 40.5 0 84.8 24.1 88.6 93.7zm521.6-96.2v16.5c-20.3-34.2-58.2-55.7-97.5-55.7h-3.8c-86.1 0-145.6 68.4-145.6 168.4 0 101.3 57 169.6 141.8 169.6 67.1 0 97.5-40.5 107.6-58.2v49.4h45.6v-447h-46.8v157zm-98.8 257c-59.5 0-98.7-50.6-98.7-126.6 0-73.4 41.8-125.3 100-125.3 49.4 0 98.7 39.2 98.7 125.3 0 93.7-51.9 126.6-100 126.6zm424.1-250.7v2.5c-8.9-15.2-36.7-48.1-103.8-48.1-84.8 0-140.5 64.6-140.5 163.3s58.2 165.8 144.3 165.8c46.8 0 78.5-16.5 100-50.6v44.3c0 62-39.2 97.5-108.9 97.5-29.1 0-59.5-7.6-86.1-21.5l-2.5-1.3-17.7 39.2 2.5 1.3c32.9 16.5 69.6 25.3 105.1 25.3 74.7 0 154.4-38 154.4-143.1v-311.3h-46.8zm-93.7 241.8c-62 0-102.5-48.1-102.5-122.8 0-76 35.4-119 96.2-119 67.1 0 98.7 39.2 98.7 119 1.3 78.5-31.6 122.8-92.4 122.8zm331.7-286.1c-93.7 0-158.2 69.6-158.2 168.4v11.4c1.3 43 20.3 83.6 51.9 113.9 30.4 27.9 69.6 44.3 111.4 44.3h6.3c44.3 0 86.1-16.5 119-44.3l1.3-1.3-22.8-35.4-2.5 1.3c-26.6 24.1-59.5 38-94.9 38-58.2 0-117.7-38-121.5-122.8h244.2v-2.5s1.3-15.2 1.3-22.8c0-89.9-53.2-148.2-135.5-148.2zm-107.6 134.2c10.1-57 51.9-93.7 106.3-93.7 40.5 0 84.8 24.1 88.6 93.7zm440.6-127.9c-6.3-1.3-11.4-1.3-17.7-2.5-44.3 0-81 27.9-100 74.7v-72.2h-46.8l1.3 320.3v2.5h48.1v-135.4c0-20.3 2.5-41.8 8.9-60.8 15.2-49.4 49.4-81 89.9-81 5.1 0 10.1 0 15.2 1.3h2.5v-46.8z"
-                                        fill="currentColor"
+                                        fill=""
                                     />
                                 </svg>
 
@@ -149,7 +148,7 @@ export default function Home({ auth }) {
                                 >
                                     <path
                                         d="M667.21 90.58c-13.76 0-23.58 4.7-28.4 13.6l-2.59 4.82V92.9h-22.39v97.86h23.55v-58.22c0-13.91 7.56-21.89 20.73-21.89 12.56 0 19.76 7.77 19.76 21.31v58.8h23.56v-63c0-23.3-12.79-37.18-34.22-37.18zm-114.21 0c-27.79 0-45 17.34-45 45.25v13.74c0 26.84 17.41 43.51 45.44 43.51 18.75 0 31.89-6.87 40.16-21l-14.6-8.4c-6.11 8.15-15.87 13.2-25.55 13.2-14.19 0-22.66-8.76-22.66-23.44v-3.89h65.73v-16.23c0-26-17.07-42.74-43.5-42.74zm22.09 43.15h-44.38v-2.35c0-16.11 7.91-25 22.27-25 13.83 0 22.09 8.76 22.09 23.44zm360.22-56.94V58.07h-81.46v18.72h28.56V172h-28.56v18.72h81.46V172h-28.57V76.79zM317.65 55.37c-36.38 0-59 22.67-59 59.18v19.74c0 36.5 22.61 59.18 59 59.18s59-22.68 59-59.18v-19.74c-.01-36.55-22.65-59.18-59-59.18zm34.66 80.27c0 24.24-12.63 38.14-34.66 38.14S283 159.88 283 135.64v-22.45c0-24.24 12.64-38.14 34.66-38.14s34.66 13.9 34.66 38.14zm98.31-45.06c-12.36 0-23.06 5.12-28.64 13.69l-2.53 3.9V92.9h-22.4v131.53h23.56v-47.64l2.52 3.74c5.3 7.86 15.65 12.55 27.69 12.55 20.31 0 40.8-13.27 40.8-42.93v-16.64c0-21.37-12.63-42.93-41-42.93zM468.06 149c0 15.77-9.2 25.57-24 25.57-13.8 0-23.43-10.36-23.43-25.18v-14.72c0-15 9.71-25.56 23.63-25.56 14.69 0 23.82 9.79 23.82 25.56zm298.47-90.92L719 190.76h23.93l9.1-28.44h54.64l.09.28 9 28.16h23.92L792.07 58.07zm-8.66 85.53l21.44-67.08 21.22 67.08zM212.59 95.12a57.27 57.27 0 0 0-4.92-47.05 58 58 0 0 0-62.4-27.79A57.29 57.29 0 0 0 102.06 1a57.94 57.94 0 0 0-55.27 40.14A57.31 57.31 0 0 0 8.5 68.93a58 58 0 0 0 7.13 67.94 57.31 57.31 0 0 0 4.92 47A58 58 0 0 0 83 211.72 57.31 57.31 0 0 0 126.16 231a57.94 57.94 0 0 0 55.27-40.14 57.3 57.3 0 0 0 38.28-27.79 57.92 57.92 0 0 0-7.12-67.95zM126.16 216a42.93 42.93 0 0 1-27.58-10c.34-.19 1-.52 1.38-.77l45.8-26.44a7.43 7.43 0 0 0 3.76-6.51V107.7l19.35 11.17a.67.67 0 0 1 .38.54v53.45A43.14 43.14 0 0 1 126.16 216zm-92.59-39.54a43 43 0 0 1-5.15-28.88c.34.21.94.57 1.36.81l45.81 26.45a7.44 7.44 0 0 0 7.52 0L139 142.52v22.34a.67.67 0 0 1-.27.6l-46.3 26.72a43.14 43.14 0 0 1-58.86-15.77zm-12-100A42.92 42.92 0 0 1 44 57.56V112a7.45 7.45 0 0 0 3.76 6.51l55.9 32.28L84.24 162a.68.68 0 0 1-.65.06L37.3 135.33a43.13 43.13 0 0 1-15.77-58.87zm159 37l-55.9-32.28L144 70a.69.69 0 0 1 .65-.06l46.29 26.73a43.1 43.1 0 0 1-6.66 77.76V120a7.44 7.44 0 0 0-3.74-6.54zm19.27-29c-.34-.21-.94-.57-1.36-.81L152.67 57.2a7.44 7.44 0 0 0-7.52 0l-55.9 32.27V67.14a.73.73 0 0 1 .28-.6l46.29-26.72a43.1 43.1 0 0 1 64 44.65zM78.7 124.3l-19.36-11.17a.73.73 0 0 1-.37-.54V59.14A43.09 43.09 0 0 1 129.64 26c-.34.19-.95.52-1.38.77l-45.8 26.44a7.45 7.45 0 0 0-3.76 6.51zm10.51-22.67l24.9-14.38L139 101.63v28.74l-24.9 14.38-24.9-14.38z"
-                                        fill="currentColor"
+                                        fill=""
                                     />
                                 </svg>
 
@@ -248,13 +247,13 @@ export default function Home({ auth }) {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900 bg-gradient-to-t from-black to-transparent">
+                <div className="">
                     <div className="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
                         <div className="max-w-3xl mb-10 lg:mb-14">
                             <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
                                 Success stories
                             </h2>
-                            <p className="mt-1 text-neutral-400">
+                            <p className="mt-1 text-neutral-600">
                                 Global brands see measurable success when they
                                 collaborate with us. From higher conversion and
                                 payment approval rates to faster processing
@@ -264,7 +263,7 @@ export default function Home({ auth }) {
 
                         <div className="grid grid-cols-1 lg:grid-cols-3 items-center border border-neutral-700 divide-y lg:divide-y-0 lg:divide-x divide-neutral-700 rounded-xl">
                             <a
-                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-primary/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
                                 href="#"
                             >
                                 <div className="mb-5">
@@ -319,14 +318,14 @@ export default function Home({ auth }) {
                                     </div>
                                 </div>
                                 <p className="mt-auto">
-                                    <span className="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]">
+                                    <span className="font-medium text-sm text-primary pb-1 border-b-2 border-neutral-700 group-hover:border-primary transition focus:outline-none group-focus:border-primary">
                                         Case study
                                     </span>
                                 </p>
                             </a>
 
                             <a
-                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-primary/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
                                 href="#"
                             >
                                 <div className="mb-5">
@@ -369,14 +368,14 @@ export default function Home({ auth }) {
                                     </div>
                                 </div>
                                 <p className="mt-auto">
-                                    <span className="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]">
+                                    <span className="font-medium text-sm text-primary pb-1 border-b-2 border-neutral-700 group-hover:border-primary transition focus:outline-none group-focus:border-primary">
                                         Case study
                                     </span>
                                 </p>
                             </a>
 
                             <a
-                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                                className="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-primary/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
                                 href="#"
                             >
                                 <div className="mb-5">
@@ -426,7 +425,7 @@ export default function Home({ auth }) {
                                     </div>
                                 </div>
                                 <p className="mt-auto">
-                                    <span className="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]">
+                                    <span className="font-medium text-sm text-primary pb-1 border-b-2 border-neutral-700 group-hover:border-primary transition focus:outline-none group-focus:border-primary">
                                         Case study
                                     </span>
                                 </p>
@@ -435,13 +434,13 @@ export default function Home({ auth }) {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900">
+                <div className="">
                     <div className="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
                         <div className="max-w-3xl mb-10 lg:mb-14">
-                            <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+                            <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">
                                 Our client reviews
                             </h2>
-                            <p className="mt-1 text-neutral-400">
+                            <p className="mt-1 text-neutral-600">
                                 With over 30 awards, and achievements, we
                                 proudly demonstrate our unwavering dedication to
                                 excellence and client success.
@@ -451,9 +450,9 @@ export default function Home({ auth }) {
                         <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
                             <div>
                                 <blockquote>
-                                    <p className="font-medium text-xl text-white md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
+                                    <p className="font-medium text-xl md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
                                         To say that{" "}
-                                        <span className="text-primary-400">
+                                        <span className="text-primary border-b-2 border-primary">
                                             Datalogic Systems Corporation
                                         </span>{" "}
                                         has been life-changing is an
@@ -471,10 +470,10 @@ export default function Home({ auth }) {
                                                 />
                                             </div>
                                             <div className="ms-4 md:ms-0">
-                                                <div className="text-base font-semibold text-white">
+                                                <div className="text-base font-semibold">
                                                     Nicole Grazioso
                                                 </div>
-                                                <div className="text-xs text-neutral-400">
+                                                <div className="text-xs text-neutral-600">
                                                     Director Payments & Risk |
                                                     Airbnb
                                                 </div>
@@ -495,14 +494,14 @@ export default function Home({ auth }) {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900">
+                <div className="">
                     <div className="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
                         <div className="border border-neutral-800 rounded-xl">
                             <div className="p-4 lg:p-8 bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
                                 <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-20 gap-x-12">
                                     <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
                                         <svg
-                                            className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto"
+                                            className="flex-shrink-0 size-6 sm:size-8 text-primary mx-auto"
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="24"
                                             height="24"
@@ -559,7 +558,7 @@ export default function Home({ auth }) {
 
                                     <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
                                         <svg
-                                            className="flex-shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto"
+                                            className="flex-shrink-0 size-6 sm:size-8 text-primary mx-auto"
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="24"
                                             height="24"
@@ -591,13 +590,13 @@ export default function Home({ auth }) {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900">
+                <div className="">
                     <div className="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20  mx-auto">
                         <div className="max-w-3xl mb-10 lg:mb-14">
-                            <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+                            <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">
                                 Our approach
                             </h2>
-                            <p className="mt-1 text-neutral-400">
+                            <p className="mt-1 text-neutral-600">
                                 This profound insight guides our comprehensive
                                 strategy — from meticulous research and
                                 strategic planning to the seamless execution of
@@ -617,7 +616,7 @@ export default function Home({ auth }) {
 
                             <div>
                                 <div className="mb-4">
-                                    <h3 className="text-xs font-medium uppercase text-[#ff0]">
+                                    <h3 className="text-xs font-medium uppercase text-primary">
                                         Steps
                                     </h3>
                                 </div>
@@ -625,16 +624,16 @@ export default function Home({ auth }) {
                                 <div className="flex gap-x-5 ms-1">
                                     <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                                         <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-primary font-semibold text-xs uppercase rounded-full">
                                                 1
                                             </span>
                                         </div>
                                     </div>
 
                                     <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm lg:text-base text-neutral-400">
-                                            <span className="text-white">
-                                                Market Research and Analysis:
+                                        <p className="text-sm lg:text-base text-neutral-600">
+                                            <span className="text-primary">
+                                                Market Research and Analysis: {" "}
                                             </span>
                                             Identify your target audience and
                                             understand their needs, preferences,
@@ -646,16 +645,16 @@ export default function Home({ auth }) {
                                 <div className="flex gap-x-5 ms-1">
                                     <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                                         <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-primary font-semibold text-xs uppercase rounded-full">
                                                 2
                                             </span>
                                         </div>
                                     </div>
 
                                     <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm lg:text-base text-neutral-400">
-                                            <span className="text-white">
-                                                Product Development and Testing:
+                                        <p className="text-sm lg:text-base text-neutral-600">
+                                            <span className="text-primary">
+                                                Product Development and Testing: {" "}
                                             </span>
                                             Develop digital products or services
                                             that address the needs and
@@ -667,16 +666,16 @@ export default function Home({ auth }) {
                                 <div className="flex gap-x-5 ms-1">
                                     <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                                         <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-primary font-semibold text-xs uppercase rounded-full">
                                                 3
                                             </span>
                                         </div>
                                     </div>
 
                                     <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm md:text-base text-neutral-400">
-                                            <span className="text-white">
-                                                Marketing and Promotion:
+                                        <p className="text-sm md:text-base text-neutral-600">
+                                            <span className="text-primary">
+                                                Marketing and Promotion: {" "}
                                             </span>
                                             Develop a comprehensive marketing
                                             strategy to promote your digital
@@ -688,16 +687,16 @@ export default function Home({ auth }) {
                                 <div className="flex gap-x-5 ms-1">
                                     <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                                         <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                                            <span className="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-primary font-semibold text-xs uppercase rounded-full">
                                                 4
                                             </span>
                                         </div>
                                     </div>
 
                                     <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm md:text-base text-neutral-400">
-                                            <span className="text-white">
-                                                Launch and Optimization:
+                                        <p className="text-sm md:text-base text-neutral-600">
+                                            <span className="text-primary">
+                                                Launch and Optimization: {" "}
                                             </span>
                                             Launch your digital products or
                                             services to the market, closely
@@ -708,7 +707,7 @@ export default function Home({ auth }) {
                                 </div>
 
                                 <a
-                                    className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
+                                    className="group inline-flex items-center gap-x-2 py-2 px-3 bg-primary-500 font-medium text-sm text-extrabold text-white/80 rounded-full focus:outline-none"
                                     href="#"
                                 >
                                     <svg
@@ -775,11 +774,14 @@ export default function Home({ auth }) {
                                         </h4>
 
                                         <address className="mt-1 text-neutral-400 text-sm not-italic">
-                                            Unit 5B 5th Floor, Asian Star Building
+                                            Unit 5B 5th Floor, Asian Star
+                                            Building
                                             <br />
-                                           2402 Asean Drive Corner, Singapura Lane
-                                           <br />
-                                           Filinvest Corporate City Alabang, Muntinlupa City, 1781
+                                            2402 Asean Drive Corner, Singapura
+                                            Lane
+                                            <br />
+                                            Filinvest Corporate City Alabang,
+                                            Muntinlupa City, 1781
                                         </address>
                                     </div>
                                 </div>
