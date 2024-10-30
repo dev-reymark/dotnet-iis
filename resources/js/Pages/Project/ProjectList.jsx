@@ -57,11 +57,11 @@ export default function ProjectList({ projects, auth }) {
             <NavBar auth={auth} />
             <Head title="List of Projects" />
             <div className="relative overflow-hidden">
-                <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+                <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-10">
                     <div className="text-center">
-                        <h1 className="text-5xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200 mb-8">
+                        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-neutral-200 mb-8">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary relative">
-                                Projects
+                                Consolidated Projects
                                 <span className="absolute  left-1/2 transform -translate-x-1/2 -bottom-2 h-[3px] w-16 bg-[#2aefe6]"></span>
                             </span>
                         </h1>
@@ -210,24 +210,36 @@ export default function ProjectList({ projects, auth }) {
                 </div>
             </div>
 
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Modal
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
+                position="center"
+                size="xl"
+            >
                 <ModalContent>
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-col gap-1">
-                                <p className="text-xl font-extrabold">
+                                <p className="text-2xl font-extrabold">
                                     {selectedProject?.name}
                                 </p>
                             </ModalHeader>
+                            <Divider />
                             <ModalBody>
-                                <p>{selectedProject?.description}</p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 py-2">
+                                    <Image
+                                        className="w-full object-cover"
+                                        src={selectedProject?.image}
+                                        alt={selectedProject?.name}
+                                    />
+                                    <p>{selectedProject?.description}</p>
+                                </div>
                             </ModalBody>
                             <Divider />
                             <ModalFooter>
                                 <Button
                                     size="sm"
                                     color="danger"
-                                    variant="light"
                                     onPress={onClose}
                                 >
                                     Close
@@ -236,14 +248,14 @@ export default function ProjectList({ projects, auth }) {
                                     as={Link}
                                     size="sm"
                                     color="primary"
-                                    onPress={() =>
+                                    onClick={() =>
                                         window.open(
                                             selectedProject?.url,
                                             "_blank"
                                         )
                                     }
                                 >
-                                    Demo
+                                    Live Preview
                                 </Button>
                             </ModalFooter>
                         </>

@@ -45,11 +45,11 @@ export default function Index({ projects, auth }) {
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Projects" />
                 <div className="relative overflow-hidden">
-                    <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+                    <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-12">
                         <div className="text-center">
-                            <h1 className="text-5xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200 mb-8">
+                            <h1 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-neutral-200 mb-8">
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary relative">
-                                    Projects
+                                    Consolidated Projects
                                     <span className="absolute  left-1/2 transform -translate-x-1/2 -bottom-2 h-[3px] w-16 bg-[#2aefe6]"></span>
                                 </span>
                             </h1>
@@ -71,7 +71,7 @@ export default function Index({ projects, auth }) {
                                     <CreateProject />
                                     <Tooltip
                                         showArrow={true}
-                                        content="Back to home"
+                                        content="Back to website"
                                     >
                                         <Button
                                             className="mt-6"
@@ -175,9 +175,7 @@ export default function Index({ projects, auth }) {
                                         shadow="sm"
                                         key={index}
                                         isPressable
-                                        onPress={() =>
-                                            (window.location.href = project.url)
-                                        }
+                                        onPress={() => window.open(project.url, "_blank")}
                                     >
                                         <CardBody className="overflow-visible p-0">
                                             <Image
