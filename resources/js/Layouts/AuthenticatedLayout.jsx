@@ -4,7 +4,7 @@ import Dropdown from "@/Components/Dropdown";
 import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { Link } from "@inertiajs/react";
-import { User } from "@nextui-org/react";
+import { Avatar, User } from "@nextui-org/react";
 
 export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] =
@@ -39,10 +39,11 @@ export default function Authenticated({ user, header, children }) {
                             <div className="ms-3 relative">
                                 <Dropdown>
                                     <Dropdown.Trigger>
-                                        <User
+                                        <Avatar
                                             className="cursor-pointer"
-                                            name={user.name}
-                                            description="Administrator"
+                                            // name={user.name}
+                                            // description="Administrator"
+                                            showFallback
                                             avatarProps={{
                                                 src: user.profile_photo_url,
                                                 alt: user.name,
@@ -51,6 +52,14 @@ export default function Authenticated({ user, header, children }) {
                                     </Dropdown.Trigger>
 
                                     <Dropdown.Content>
+                                        <div className="flex flex-col p-2">
+                                            <p className="text-md">
+                                                {user.name}
+                                            </p>
+                                            <p className="text-sm text-default-500">
+                                                Administrator
+                                            </p>
+                                        </div>
                                         <Dropdown.Link
                                             href={route("profile.edit")}
                                         >
