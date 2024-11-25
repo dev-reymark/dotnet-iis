@@ -175,7 +175,9 @@ export default function Index({ projects, auth }) {
                                         shadow="sm"
                                         key={index}
                                         isPressable
-                                        onPress={() => window.open(project.url, "_blank")}
+                                        onClick={() =>
+                                            window.open(project.url, "_blank")
+                                        }
                                     >
                                         <CardBody className="overflow-visible p-0">
                                             <Image

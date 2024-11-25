@@ -226,7 +226,7 @@ export default function ProjectList({ projects, auth }) {
                             </ModalHeader>
                             <Divider />
                             <ModalBody>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 py-2">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 py-2 gap-5">
                                     <Image
                                         className="w-full object-cover"
                                         src={selectedProject?.image}
@@ -245,15 +245,12 @@ export default function ProjectList({ projects, auth }) {
                                     Close
                                 </Button>
                                 <Button
-                                    as={Link}
+                                    as="a"
+                                    href={selectedProject?.url}
                                     size="sm"
                                     color="primary"
-                                    onClick={() =>
-                                        window.open(
-                                            selectedProject?.url,
-                                            "_blank"
-                                        )
-                                    }
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Live Preview
                                 </Button>
