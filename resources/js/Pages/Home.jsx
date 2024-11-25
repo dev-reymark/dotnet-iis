@@ -250,7 +250,7 @@ export default function Home({ auth }) {
                 <div className="">
                     <div className="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
                         <div className="max-w-3xl mb-10 lg:mb-14">
-                            <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+                            <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">
                                 Success stories
                             </h2>
                             <p className="mt-1 text-neutral-600">
